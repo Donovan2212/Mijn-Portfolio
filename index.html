@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zet je naam hier — AI Automation Developer</title>
+  <meta name="description" content="Portfolio van Zet je naam hier — AI Automation Developer.">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #08090d;
+      color: #f4f5f7;
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(1120px, 92%); margin: auto; }
+    nav {
+      position: sticky; top: 0; z-index: 10;
+      backdrop-filter: blur(16px);
+      background: rgba(8,9,13,.75);
+      border-bottom: 1px solid #1c1f29;
+    }
+    .nav-inner { height: 72px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-weight: 800; letter-spacing: -.03em; }
+    .logo span { color: #7c5cff; }
+    nav ul { display: flex; gap: 28px; list-style: none; color: #aeb3c0; font-size: 14px; }
+    nav a:hover { color: white; }
+    .hero { min-height: 82vh; display: grid; place-items: center; position: relative; overflow: hidden; }
+    .orb {
+      position: absolute; width: 480px; height: 480px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(124,92,255,.28), transparent 68%);
+      filter: blur(20px); top: 5%; right: -10%;
+    }
+    .hero-content { position: relative; max-width: 850px; }
+    .eyebrow { color: #9b87ff; font-weight: 700; font-size: 14px; margin-bottom: 18px; }
+    h1 { font-size: clamp(48px, 8vw, 92px); line-height: .98; letter-spacing: -.06em; max-width: 850px; }
+    h1 span { color: #8d72ff; }
+    .hero p { margin-top: 26px; max-width: 650px; color: #aeb3c0; font-size: 19px; }
+    .buttons { display: flex; gap: 14px; margin-top: 34px; flex-wrap: wrap; }
+    .btn { padding: 13px 20px; border-radius: 12px; border: 1px solid #292d39; font-weight: 700; }
+    .primary { background: #7c5cff; border-color: #7c5cff; }
+    .primary:hover { background: #9177ff; }
+    .secondary:hover { border-color: #666d7e; }
+    section { padding: 100px 0; border-top: 1px solid #171a22; }
+    .section-title { font-size: 38px; letter-spacing: -.04em; margin-bottom: 12px; }
+    .section-subtitle { color: #8e94a3; margin-bottom: 38px; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .card {
+      background: #0d0f15; border: 1px solid #1d212c; border-radius: 18px; padding: 28px;
+      transition: transform .2s, border-color .2s;
+    }
+    .card:hover { transform: translateY(-4px); border-color: #3b345d; }
+    .icon { font-size: 28px; margin-bottom: 18px; }
+    .card h3 { margin-bottom: 10px; }
+    .card p { color: #9399a8; font-size: 15px; }
+    .skills { display: flex; flex-wrap: wrap; gap: 10px; }
+    .skill { border: 1px solid #272b36; padding: 9px 13px; border-radius: 999px; color: #c8ccd5; background: #0d0f15; font-size: 14px; }
+    .about { display: grid; grid-template-columns: 1fr 1.4fr; gap: 60px; align-items: center; }
+    .about p { color: #a0a6b4; font-size: 17px; }
+    .contact {
+      text-align: center; background: linear-gradient(180deg, transparent, rgba(124,92,255,.07));
+      border-radius: 24px; padding: 70px 25px;
+    }
+    footer { padding: 30px 0; color: #686e7d; font-size: 13px; display: flex; justify-content: space-between; }
+    @media (max-width: 760px) {
+      nav ul { display: none; }
+      .grid, .about { grid-template-columns: 1fr; }
+      .hero { min-height: 75vh; }
+      section { padding: 72px 0; }
+      footer { flex-direction: column; gap: 8px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="wrap nav-inner">
+      <a class="logo" href="#">Zet je naam <span>hier.</span></a>
+      <ul>
+        <li><a href="#work">Werk</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">Over mij</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="orb"></div>
+      <div class="wrap hero-content">
+        <div class="eyebrow">AI AUTOMATION DEVELOPER</div>
+        <h1>Ik bouw systemen die <span>werk automatiseren.</span></h1>
+        <p>Ik combineer AI, APIs en automation om repetitieve processen slimmer, sneller en schaalbaar te maken.</p>
+        <div class="buttons">
+          <a class="btn primary" href="#work">Bekijk mijn werk →</a>
+          <a class="btn secondary" href="#contact">Neem contact op</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="work">
+      <div class="wrap">
+        <h2 class="section-title">Projecten</h2>
+        <p class="section-subtitle">Voorbeelden van systemen die ik bouw.</p>
+        <div class="grid">
+          <article class="card">
+            <div class="icon">🤖</div>
+            <h3>AI Agents</h3>
+            <p>Intelligente agents die informatie verwerken, beslissingen ondersteunen en acties uitvoeren.</p>
+          </article>
+          <article class="card">
+            <div class="icon">⚡</div>
+            <h3>Workflow Automation</h3>
+            <p>Van lead intake tot rapportage: processen automatisch laten lopen zonder handmatig werk.</p>
+          </article>
+          <article class="card">
+            <div class="icon">🔌</div>
+            <h3>API Integrations</h3>
+            <p>AI, CRM's, databases en andere tools verbinden tot één efficiënte workflow.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="wrap">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-subtitle">Technologieën waarmee ik werk.</p>
+        <div class="skills">
+          <span class="skill">Python</span><span class="skill">JavaScript</span>
+          <span class="skill">APIs</span><span class="skill">OpenAI</span>
+          <span class="skill">AI Agents</span><span class="skill">n8n</span>
+          <span class="skill">Make</span><span class="skill">Zapier</span>
+          <span class="skill">Webhooks</span><span class="skill">Databases</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap about">
+        <div>
+          <div class="eyebrow">OVER MIJ</div>
+          <h2 class="section-title">Van idee naar automation.</h2>
+        </div>
+        <p>
+          Ik ontwerp en ontwikkel AI-automations die bedrijven helpen minder tijd te besteden aan
+          repetitieve taken. Mijn focus ligt op praktische oplossingen: duidelijke workflows,
+          betrouwbare integraties en AI die daadwerkelijk waarde toevoegt.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="contact">
+          <div class="eyebrow">CONTACT</div>
+          <h2 class="section-title">Heb je een proces dat slimmer kan?</h2>
+          <p class="section-subtitle">Laten we kijken wat we kunnen automatiseren.</p>
+          <a class="btn primary" href="mailto:jouw@email.nl">Stuur een bericht →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <span>© 2026 Zet je naam hier</span>
+    <span>AI Automation Developer</span>
+  </footer>
+</body>
+</html>
